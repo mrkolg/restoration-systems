@@ -1,0 +1,100 @@
+$breakpoints: (
+	'full': 1920px,
+	'xl': 1680px,
+	'macbook': 1440px,
+	'ipad-pro': 1366px,
+	'macbook-air': 1280px,
+	'widescreen': 1200px,
+	'desktop': 1024px,
+	'tablet': 768px,
+	'phone': 667px,
+	'phone-md': 568px,
+	'xs-phone': 375px,
+);
+// ligatured operators ≥ ≤
+
+// keywords
+$media-expressions: (
+	'screen': 'screen',
+	'print': 'print',
+	'handheld': 'handheld',
+	'landscape': '(orientation: landscape)',
+	'portrait': '(orientation: portrait)',
+	'retina2x': '(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)',
+	'retina3x': '(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)'
+);
+
+// Colors basic
+// Color calculator - http://razorjam.github.io/sasscolourfunctioncalculator/
+// Color names - http://name-of-color.com/
+
+$gray-lt: #F8F8F8;
+$gray: #5E6063;
+$black: #1A1F26;
+$white: #fff;
+$green: #516E1E;
+$green-dark:#354814;
+$blue: #3A6F8F;
+$blue-dark:#244960;
+$blue-lt:#EBF7FF;
+$blue-header:#B7C9D4;
+
+// Colors theme
+$color-brand:          $blue;
+$color-brand-dark:     $blue-dark;
+$color-brand-light:    lighten($color-brand,15%);
+
+// Fonts
+$benton:'benton-sans';
+$base-main-font: 'miller-text';
+$base-font-sans-serif: $base-main-font, 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+$base-font-serif: 'Times New Roman', 'Times', 'Baskerville', 'Georgia', serif;
+
+// This is the default html and body font-size for the base rem value.
+$rem-base: 16px;
+
+// Body
+$base-text-color: $gray;
+$font-size-base: 16px;
+$line-height-base: 1.6;
+$base-font-family: $base-font-sans-serif;
+$vertical-rhythm: ($line-height-base * 1em);
+
+// Headers
+$h1-font-size: 72px;
+$h1-font-size-tab: 3.57143rem;
+$h1-font-size-pho: 2.77rem;
+$h2-font-size: 54px;
+$h2-font-size-tab: 2.5rem;
+$h2-font-size-pho: 2rem;
+$h3-font-size: 42px;
+$h3-font-size-tab: 2.2rem;
+$h3-font-size-pho: 2rem;
+$h4-font-size: 26px;
+$h5-font-size: 21px;
+$h6-font-size: 16px;
+
+// Container
+$container-width: 1050px;
+$container-pading-left: 15px;
+$container-pading-right: $container-pading-left;
+$container-width-full: $container-width + $container-pading-left + $container-pading-right;
+
+// Buttons
+$btn-padding-y: 20px;
+$btn-padding-y-pho: 15px;
+$btn-padding-x: 40px;
+$btn-padding-x-pho: 30px;
+$btn-font-size: 12px;
+$btn-radius: 4px;
+$btn-border-width: 2px;
+$btn-line-height: 1;
+$btn-letter-spacing: 2px;
+$btn-bg-color: $color-brand;
+
+// Input
+$input-padding-x: $btn-padding-x;
+
+// Animation
+$animation-speed: 0.3s;
+$animation-name: ease;
